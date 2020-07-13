@@ -10,6 +10,79 @@
 h2 {
     text-align: center;
 }
+h2:hover{
+    font-size: large;
+    color: brown;
+    background-color: cyan;
+}
+input:focus{
+    font-size: 30px;
+    color: blue;
+}
 p{
     text-align: justify;
+}
+li:nth-child(2n){
+    color: red;
+    background-color: yellow;
+}
+li::before{
+    content: "mona ";
+    color: royalblue;
+}
+a:visited{
+    color: red;
+}
+.blog-long {
+    border: 5px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 40px;
+    width: 80%;
+    float: left;
+}
+body{
+    counter-reset: section;
+
+}
+li::before{
+    counter-increment: section;
+    content: "Fruit " counter(section) ": ";
+}
+.container{
+    background-color: lightblue;
+}
+div{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+#first{
+    background-color: forestgreen;
+    position: relative;
+    left: 200px;
+}
+#second{
+    background-color: red;
+}
+#third{
+    background-color: fuchsia;
+    position: relative;
+    left: 200px;
+}
+#forth{
+    background-color: yellow;
+    position: relative;
+    left: 400x;
+}
+#fifth{
+    background-color: blue;
+}
+#sixth{
+    background-color: fuchsia;
+    position: relative;
+    left: 200px;
+}
+h1{
+    COLOR: red
 }
